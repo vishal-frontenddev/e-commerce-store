@@ -1,0 +1,102 @@
+/* for mobile device */
+
+@media only screen and (max-width:800px) {
+
+    .container {
+        width: 90%;
+        
+    }
+    .navbaar {
+        flex-direction: column;
+    }
+    .navlinks {
+        flex-direction: column;
+        background: var(--footerBg);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: -900px;
+        transition: all 0.5s ease-in-out;
+    }
+    .navlinks .active {
+        margin-top: 0px;
+    }
+    .navlinks li {
+        margin: 20px auto;
+    }
+    .navlinks li a {
+        color: #fff;
+    }
+
+    .brand img {
+        width: 100px;
+    }
+    .header {
+        height: 100%;
+    }
+    .header-content {
+        margin: 50px auto;
+        flex-direction: column;
+    }
+    .line {
+        width: 100px;
+
+    }
+    .header-content h1 {
+        font-size: 40px;
+    }
+    .header-content img {
+        margin: 30px auto;
+    }
+    #categories {
+        flex-direction: column;
+    }
+    .category {
+        margin: 20px auto;
+    }
+    .category img {
+        max-width: 90%;
+    }
+    .products {
+        justify-content: center;
+    }
+    .product {
+        margin: 20px auto;
+    }
+    #offer .container {
+        flex-direction: column;
+    }
+    #offer .container img {
+        max-width: 90%;
+        padding: 40px 0;
+    }
+    #offer .container {
+        font-size: 40px;
+    }
+    #offer .container h1 {
+        font-size: 35px;
+    }
+    #offer .container p {
+        font-size: 22px;
+    }
+    #offer .content {
+        margin: 30px;
+    }
+    #featured {
+        flex-direction: column;
+    }
+    #featured img {
+        margin: 20px auto;
+    }
+    .footer-content {
+        flex-direction: column;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 40px 0px;
+    }
+    .footer-content .col {
+        margin:  10px 0;
+    }
+}

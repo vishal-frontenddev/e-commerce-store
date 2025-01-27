@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Remove Default Margin and paddings for all HTML elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* CSS variables to use any where in website (if you want to change theme one change here will apply to entire website) */
+:root {
+    --heading : #393A56;
+    --text : #7E7F85;
+    --theme : #FD5353;
+    --bg : #F7F8F9;
+    --footerBg : #415161;
+}
+
+body{
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5 {
+    color: var(--heading);
+}
+p {
+    color: var(--text);
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+/* container */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background: var(--bg);
+    width: 100vw;
+    height: 90vh;
+}
+
+.navbaar {
+    display: flex;
+    justify-content: space-between;
+}
+.navlinks {
+    display: flex;
+    align-items: centerś;
+    margin-top: 20px;
+}
+.navlinks li {
+    margin: 0 20px;
+}
+.navlinks img {
+    width: 50px;
+}
+.navlinks li a {
+    color: var(--heading);
+}
+.header-content {
+    display: flex;
+    align-items: center;
+}
+.header-content img {
+    max-width: 90%;
+}
+.header-info {
+    flex: 60%;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background: var(--theme);
+    border-radius: 5px;
+}
+.header-info h1 {
+    font-size: 50px;
+}
+.header-info h3 , .header-info p {
+    margin: 15px 0;
+}
+.ctn {
+    padding: 10px 16px;
+    background: var(--theme);
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.menuBtn img{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    
+}
+
+/* categories */
+#categories {
+    display: flex;
+    margin-top: 30px ;
+    justify-content: space-between;
+}
+.categogry {
+    text-align: center;
+}
+#featured-products {
+    margin: 80px auto;
+}
+.section-info {
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+    justify-content: center;
+    align-items: center;
+}
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* ofer */
+#offer {
+    margin: 80px auto;
+    background: var(--bg);
+}
+#offer .container {
+    display: flex;
+    align-items: center;
+}
+#offer .container img  {
+    max-width: 600px;
+}
+.offer-content h1 {
+    font-size: 50px;
+}
+
+/* featured */
+#featured {
+    margin: 150px auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    background: var(--footerBg);
+} 
+footer p, footer li {
+    color: #b5b5b5;
+}
+.footer-content {
+    padding: 80px 0px;
+    display: flex;
+}
+.footer-content .col {
+    flex: 1;
+    margin: 0 20px;
+}
+.copyright {
+    padding: 10px 0px;
+    text-align: center;
+}
+
